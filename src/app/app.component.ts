@@ -14,6 +14,10 @@ import { MatHorizontalStepper } from '@angular/material/stepper';
 })
 export class AppComponent implements OnInit {
 
+// For Deploy
+// https://github.com/angular-schule/angular-cli-ghpages
+// ng deploy --base-href=/4W6-JS-lib/
+
   images= [
     "http://localhost:4200/assets/images/image (1).jpg",
     "http://localhost:4200/assets/images/image (2).jpg",
