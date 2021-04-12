@@ -1,0 +1,21 @@
+<mat-selection-list [multiple]="false">
+  <mat-list-option>
+    Comme qu'il existe beaucoup plus de librairies JS que de librairies pour Angular, il peut être très utile d'intégrer une librairie JavaScript dans notre code Angular.
+  </mat-list-option>
+  <mat-list-option>
+    Le problème d'inclure des libraires JavaScript, c'est qu'on doit souvant les instancier une fois que nos éléments sont chargés et affichés.
+  </mat-list-option>
+  <mat-list-option>
+    Cela nous crée un problème puisqu'on récupère nos éléments à partir de requêtes HTTP et ils seront pas la suite affichés avec un ngFor.
+  </mat-list-option>
+  <mat-list-option>
+    Ainsi, il n'y a aucun évènement dans le cycle de vie d'Angular qui nous permet d'instancier la librairie JS au bon moment.
+  </mat-list-option>
+
+  <mat-list-option>
+    <div style="display: inline;">
+      Pour régler ce problème, nous utiliserons éléments <span style="font-weight: bold;">ViewChild</span> et <span style="font-weight: bold;">ViewChildren</span>.
+    </div>
+  </mat-list-option>
+
+</mat-selection-list>

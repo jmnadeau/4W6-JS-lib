@@ -1,0 +1,37 @@
+<mat-selection-list [multiple]="false">
+  <mat-list-option>
+    <a href="https://glidejs.com/">https://glidejs.com/</a>
+  </mat-list-option>
+  <mat-list-option>
+    Commençons par inclure les librairies à de npm
+  </mat-list-option>
+  <mat-list-option style="height: unset;">
+    <pre>
+      {{codeNPM}}
+    </pre>
+  </mat-list-option>
+  <mat-list-option>
+    Ensuite, il faut ajouter les fichiers JS et CSS au build d'Angular
+  </mat-list-option>
+  <mat-list-option>
+    <div style="display: inline;">
+      Dans le fichier angular.json, rechercher la partie <pre style="display: inline;">"build"</pre> puis dans le build, <pre style="display: inline;">"scripts"</pre> et <pre style="display: inline;">"styles"</pre>
+    </div>
+  </mat-list-option>
+  <mat-list-option>
+    On peut maintenant ajouter le script et les 2 css
+  </mat-list-option>
+  <mat-list-option style="height: unset;">
+    <pre>{{codeBuildScripts}}</pre>
+  </mat-list-option>
+  <mat-list-option>
+    Ensuite, on peut importer Glide dans le componant
+  </mat-list-option>
+  <mat-list-option style="height: unset;">
+    <pre>{{codeDeclares}}</pre>
+  </mat-list-option>
+  <mat-list-option>
+    Pour le reste, vous pourrez suivre le Getting Started du site et regarder l'exemple de code qui à prochaine page.
+  </mat-list-option>
+
+</mat-selection-list>

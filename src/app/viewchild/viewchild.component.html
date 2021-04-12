@@ -1,0 +1,54 @@
+<mat-selection-list [multiple]="false">
+  <mat-list-option>
+    ViewChild et ViewChildren sont l'équivalent, ViewChild est pour un élément, alors que ViewChildren est pour plusieurs éléments.
+  </mat-list-option>
+  <mat-list-option>
+    Ils servent à maintenir des références avec des objects dans nos templates (HTML).
+  </mat-list-option>
+  <mat-list-option>
+    À de ses références, on pourra faire s'abonner à des évènements (.subscribe) ou encore les utiliser directement pour instancier une librairie JS.
+  </mat-list-option>
+  <mat-list-option>
+    Pour les utiliser, on doit mettre #nomDeLaReference dans la balise HTML
+  </mat-list-option>
+  <mat-list-option>
+    <pre>
+      {{codeHTMLChild}}
+    </pre>
+  </mat-list-option>
+  <mat-list-option>
+    Ensuite, nous pourront utiliser cette référence pour créer un ViewChild dans le .ts
+  </mat-list-option>
+  <mat-list-option>
+    <pre>
+      {{codeTSChild}}
+    </pre>
+  </mat-list-option>
+  <mat-list-option>
+    Le fonctionnement pour un ViewChildren est relativement le même, mais il s'applique à plusieurs éléments
+  </mat-list-option>
+  <mat-list-option>
+    On doit mettre #nomDeLaReference dans la balise HTML qui contient un ngFor
+  </mat-list-option>
+  <mat-list-option>
+    <pre>
+      {{codeHTMLChildren}}
+    </pre>
+  </mat-list-option>
+  <mat-list-option>
+    Ensuite, nous pourront utiliser cette référence pour créer un ViewChild dans le .ts
+  </mat-list-option>
+  <mat-list-option>
+    <pre>
+      {{codeTSChildren}}
+    </pre>
+  </mat-list-option>
+  <mat-list-option>
+    Finalement, nous pourrons nous abonner aux changements dans le AfterViewInit.
+  </mat-list-option>
+  <mat-list-option style="height: unset;">
+    <pre>
+      {{codeSubscribeChildren}}
+    </pre>
+  </mat-list-option>
+</mat-selection-list>

@@ -1,0 +1,43 @@
+<mat-selection-list [multiple]="false">
+  <mat-list-option>
+    Pour que Masonry foncitonne bien, vous devrez également inclure ImagesLoaded, vous les trouvez aux adresses suivantes:
+  </mat-list-option>
+  <mat-list-option>
+    <a href="https://masonry.desandro.com/">https://masonry.desandro.com/</a>
+  </mat-list-option>
+  <mat-list-option>
+    <a href="https://imagesloaded.desandro.com/">https://imagesloaded.desandro.com/</a>
+  </mat-list-option>
+  <mat-list-option>
+    Commençons par inclure les librairies à partir de npm
+  </mat-list-option>
+  <mat-list-option style="height: unset;">
+    <pre>
+      {{codeNPM}}
+    </pre>
+  </mat-list-option>
+  <mat-list-option>
+    Ensuite, il faut ajouter les fichiers JS au build d'Angular
+  </mat-list-option>
+  <mat-list-option>
+    <div style="display: inline;">
+      Dans le fichier angular.json, rechercher la partie <pre style="display: inline;">"build"</pre> puis dans le build, <pre style="display: inline;">"scripts"</pre>
+    </div>
+  </mat-list-option>
+  <mat-list-option>
+    On peut maintenant ajouter les 2 scripts, celui de Masonry et celui de ImagesLoaded
+  </mat-list-option>
+  <mat-list-option style="height: unset;">
+    <pre>{{codeBuildScripts}}</pre>
+  </mat-list-option>
+  <mat-list-option>
+    Ensuite, on peut déclarer dans le componant les types des objets que l'on utilisera avec les librairies (on triche un peu!)
+  </mat-list-option>
+  <mat-list-option style="height: unset;">
+    <pre>{{codeDeclares}}</pre>
+  </mat-list-option>
+  <mat-list-option>
+    Pour le reste, vous pourrez suivre le Getting Started du site et regarder l'exemple de code qui à prochaine page.
+  </mat-list-option>
+
+</mat-selection-list>

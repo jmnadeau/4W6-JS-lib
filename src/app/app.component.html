@@ -1,0 +1,97 @@
+<mat-toolbar>
+  <span>Démo d'utilisation de librairies JS avec ViewChildren</span>
+</mat-toolbar>
+
+<mat-vertical-stepper [linear]="false" #stepper>
+  <mat-step>
+    <ng-template matStepLabel>Problème d'inclure des librairies JS</ng-template>
+
+    <app-problemejs></app-problemejs>
+
+    <div>
+      <button mat-button matStepperNext>Suivant</button>
+    </div>
+  </mat-step>
+
+  <mat-step>
+    <ng-template matStepLabel>ViewChild et ViewChildren</ng-template>
+
+    <app-viewchild></app-viewchild>
+
+    <div>
+      <button mat-button matStepperPrevious>Précédant</button>
+      <button mat-button matStepperNext>Suivant</button>
+    </div>
+  </mat-step>
+  <mat-step>
+    <ng-template matStepLabel>Étapes pour inclure Masonry</ng-template>
+
+    <app-masonry></app-masonry>
+
+    <div>
+      <button mat-button matStepperPrevious>Précédant</button>
+      <button mat-button matStepperNext>Suivant</button>
+    </div>
+</mat-step>
+<mat-step>
+    <ng-template matStepLabel>Exemple de code avec ViewChildren et Masonry</ng-template>
+
+    <app-codemsnry></app-codemsnry>
+
+    <div>
+      <button mat-button matStepperPrevious>Précédant</button>
+      <button mat-button matStepperNext>Suivant</button>
+    </div>
+</mat-step>
+<mat-step>
+  <ng-template matStepLabel>Résultat de Masonry</ng-template>
+
+  <app-resultmsnry [images]="images"></app-resultmsnry>
+
+  <div>
+    <button mat-button matStepperPrevious>Précédant</button>
+    <button mat-button matStepperNext>Suivant</button>
+  </div>
+</mat-step>
+<mat-step>
+    <ng-template matStepLabel>Étapes pour inclure Glide.js</ng-template>
+
+    <app-glidejs></app-glidejs>
+
+    <div>
+      <button mat-button matStepperPrevious>Précédant</button>
+      <button mat-button matStepperNext>Suivant</button>
+    </div>
+</mat-step>
+<mat-step>
+  <ng-template matStepLabel>Exemple de code avec ViewChildren et Glide.js</ng-template>
+
+  <app-codeglidejs></app-codeglidejs>
+
+  <div>
+    <button mat-button matStepperPrevious>Précédant</button>
+    <button mat-button matStepperNext>Suivant</button>
+  </div>
+</mat-step>
+<mat-step>
+<ng-template matStepLabel>Résultat de Glide.js</ng-template>
+
+<app-resultglidejs [images]="images"></app-resultglidejs>
+
+<div>
+  <button mat-button matStepperPrevious>Précédant</button>
+</div>
+</mat-step>
+
+  <ng-template matStepperIcon="number" let-index="index">
+    <mat-icon>{{getIcon(index)}}</mat-icon>
+  </ng-template>
+  <ng-template matStepperIcon="edit" let-index="index">
+      <mat-icon>{{getIcon(index)}}</mat-icon>
+  </ng-template>
+  <ng-template matStepperIcon="done" let-index="index">
+    <mat-icon>{{getIcon(index)}}</mat-icon>
+  </ng-template>
+
+</mat-vertical-stepper>
+
